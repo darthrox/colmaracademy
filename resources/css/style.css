@@ -1,0 +1,16 @@
+/* !COLORS: green palette (mono 5 colors)
+    lighter:  #88CC88
+    light:    #55AA55
+    main:     #2D882D
+    dark:     #116611
+    darker:   #004400
+*/
+html {
+
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+}
