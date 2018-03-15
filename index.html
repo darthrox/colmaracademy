@@ -9,7 +9,7 @@
   <body>
     <!-- !HEADER incl Logo and Navigation -->
     <header>
-      <div class="innerHeader">
+      <div class="row">
         <div class="headerLogo">
           <img src="resources/images/ic-logo.svg" />
           <span class="headerLogoDesc_01">COLMAR</span>
@@ -26,41 +26,45 @@
           <span class="navLinkMobile"><a href="#"><img src="resources/images/ic-online.svg" /></a></span>
           <span class="navLinkMobile"><a href="#"><img src="resources/images/ic-login.svg" /></a></span>
         </nav>
-      </div> <!-- END: innerHeader -->
-    </head>
+      </div> <!-- END: row Header -->
+    </header>
     <!-- !MAIN centered main container -->
     <main>
       <!-- !MAIN: 1st Row - Green Banner -->
-      <div class="mainRow darkgreen">
-        <div class="mainRowContent">
+      <div class="banner">
+        <div class="row">
           <div class="firstRowImage">
+            <img src="resources/images/banner.jpg" />
           </div>
           <div class="firstRowText">
             <h1>Learn something new everyday</h1>
             <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</span>
             <button type="button">Start here</button> 
           </div>
-        </div> <!-- END: firstRowContent -->
-      </div> <!-- END: 1st mainRow -->
+        </div> <!-- END: 1st Row -->
+      </div> <!-- END: 1st Row - Green Banner-->
+      
+      
       <!-- !MAIN: 2nd Row - 'keep practicing' -->
-      <div class="mainRow">
+      <div class="row">
         <div class="secondRowMainArticle">
           <div class="secondRowMainArticleImage">
             <img src="resources/images/information-main.jpg" />
           </div>
           <div class="secondRowMainArticleContent">
             <h2>It doesn't hurt to keep practicing</h2>
-            <span>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+            <span>"Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
              suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem
              vel eum iriure dolor in hendrerit in vulputate velit esse molestie
              consequat, vel illum dolore eu feugiat nulla facilisis at vero eros
              et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
-             delenit augue duis dolore te feugait nulla facilisi.</span>
+             delenit augue duis dolore te feugait nulla facilisi."</span>
             <span class="author">Emanuel, Sr Strategist at Hiring.com</span>
+          </div>
         </div> <!-- END: secondRowMainArticle -->
         <div class="secondRowArticles">
           <!-- 1st Article -->
-          <div class="sRA_articleContent">
+          <div class="sRA_article">
             <div class="sRA_articleImage">
               <img src="resources/images/information-orientation.jpg" />
             </div>
@@ -71,7 +75,7 @@
             </div>
           </div>
           <!-- 2nd Article -->
-          <div class="sRA_articleContent">
+          <div class="sRA_article">
             <div class="sRA_articleImage">
               <img src="resources/images/information-campus.jpg" />
             </div>
@@ -82,7 +86,7 @@
             </div>
           </div>
           <!-- 3rd Article -->
-          <div class="sRA_articleContent">
+          <div class="sRA_article">
             <div class="sRA_articleImage">
               <img src="resources/images/information-guest-lecture.jpg" />
             </div>
@@ -95,7 +99,7 @@
         </div> <!-- END: secondRowArticles -->
       </div> <!-- END: 2nd mainRow -->
       <!-- !MAIN: 3rd Row - 'start learning' -->
-      <div class="mainRow">
+      <div class="row third flexColumn">
         <div class="thirdRowHeadline">
           <h3>Start learning</h3>
         </div> <!-- END: thirdRowHeadline -->
@@ -170,13 +174,13 @@
         </div> <!-- END: thirdRowArticles -->
       </div> <!-- END: 3rd mainRow -->
       <!-- !MAIN: 4th Row - 'thesis exhibit' -->
-      <div class="mainRow">
+      <div class="row fourth flexRow">
         <div class="fourthRowHeadline">
           <h3>Thesis exhibit</h3>
         </div> <!-- END: fourthRowHeadline -->
         <div class="fourthRowMainArticle">
           <div class="fourthRowMainArticleImage">
-            <video src="resources/videos/thesis.mp4"></video>
+            <video src="resources/videos/thesis.mp4" style="width:100%"></video>
           </div>
           <div class="fourthRowMainArticleContent">
             <h2>Reimagine urban</h2>
@@ -186,10 +190,11 @@
              consequat, vel illum dolore eu feugiat nulla facilisis at vero eros
              et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
              delenit augue duis dolore te feugait nulla facilisi."</span>
-        </div> <!-- END: secondRowMainArticle -->
+          </div>
+        </div> <!-- END: fourthRowMainArticle -->
         <div class="fourthRowArticles">
           <!-- 1st Article -->
-          <div class="fRA_articleContent">
+          <div class="fRA_article">
             <div class="fRA_articleImage">
               <img src="resources/images/thesis-fisma.jpg" />
             </div>
@@ -199,7 +204,7 @@
             </div>
           </div>
           <!-- 2nd Article -->
-          <div class="fRA_articleContent">
+          <div class="fRA_article">
             <div class="fRA_articleImage">
               <img src="resources/images/thesis-now-and-then.jpg" />
             </div>
@@ -211,6 +216,7 @@
         </div> <!-- END: fourthRowArticles -->
       </div> <!-- END: 4th mainRow -->
     </main>
+    
     <!-- !FOOTER -->
     <footer>
       <div class="footerCopyright">&copy; 2018 Colmar Academy | All rights reserved</div>
