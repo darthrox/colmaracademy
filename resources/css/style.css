@@ -29,7 +29,8 @@ h1, h2, h3, h4 {
   font-family: 'Ubuntu', sans-serif;
 }
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  line-height: 3rem;
 }
 h2 {
   font-size: 2rem;
@@ -45,6 +46,22 @@ a {
 a:hover {
   color: #55AA55;
   text-decoration: underline;
+}
+button {
+  align-self: center;
+  margin-top: 2rem;
+  width: 50%;
+  height: 3rem;
+  border: 2px solid #111;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: white;
+  background-color: #333;
+  transition: background-color 250ms linear;
+}
+button:hover {
+  background-color: #55AA55;
 }
 /* !DISPLAY: Flex */
 .flexRow {
@@ -64,6 +81,38 @@ header {
   height: 4rem;
   background-color: #FFF;
   opacity: 0.9;
+}
+.headerLogo {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+.headerLogo img {
+  margin-left: 1.5rem;
+  height: 2rem;
+  width: auto;
+}
+.headerLogoDesc_01 {
+  color: #2D882D;
+  font-size: 1.5rem;
+}
+.headerLogoDesc_02 {
+  color: #111111;
+  font-size: 1.5rem;
+}
+/* !HEADER: navDesktop */
+.navDesktop {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.navLink {
+  margin-right: 1rem;
+}
+.navLink:last-child {
+  margin-right: 1.5rem;
 }
 /* !MAIN */
 main {
@@ -88,25 +137,28 @@ main {
   border-left: 1px solid #116611;
   border-right: 1px solid #116611;
 }
-/* !FIRST ROW */
+/* !FIRST ROW: Banner with headline */
 .firstRowImage {
   display: flex;
   flex-direction: column;
-  margin: 24px 32px;
+  margin: 1.5rem 2rem;
   width: 60%;
-  border: 1px solid red;
 }
 .firstRowImage img {
   max-width: 100%;
   height: auto;
 }
-
 .firstRowText {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-right: 1.5rem;
 }
-/* !SECOND ROW */
+.firstRowText span {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+/* !SECOND ROW: Main Article */
 .secondRowMainArticle {
   display: flex;
   flex-direction: column;
@@ -137,7 +189,6 @@ span.author {
   color: #999999;
   font-size: 1rem;
 }
-
 .secondRowArticles {
   display: flex;
   flex-direction: column;
@@ -175,7 +226,7 @@ span.author {
   max-width: 100%;
   height: auto;
 }
-/* !THIRD ROW */
+/* !THIRD ROW: Start Learning */
 .third {
   background-color: #B9F1B9;
 }
@@ -221,7 +272,7 @@ span.author {
   color: #AAA;
   margin-top: 0.5rem;
 }
-/* !FOURTH ROW */
+/* !FOURTH ROW: Thesis exhibit */
 .fourth {
   background-color: #EEFFEE;
   flex-wrap: wrap;
@@ -232,8 +283,6 @@ span.author {
   margin-bottom: 2rem;  
   text-align: center;
 }
-
-
 .fourthRowMainArticle {
   display: flex;
   flex-direction: column;
@@ -261,8 +310,6 @@ span.author {
   color: #AAA;
   margin-top: 2rem;
 }
-
-
 .fourthRowArticles {
   display: flex;
   flex-direction: column;
@@ -302,8 +349,6 @@ span.author {
   max-width: 100%;
   height: auto;
 }
-
-
 /* !FOOTER */
 footer {
   width: 100%;
@@ -325,4 +370,5 @@ footer {
   font-size: 0.75rem;
 }
 
-/* MEDIA QUERIES */
+/* !MEDIA QUERIES */
+
