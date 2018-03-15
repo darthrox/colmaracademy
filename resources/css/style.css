@@ -8,8 +8,8 @@
     dark:     #116611
     darker:   #004400
 */
-/* INITIAL HIDE MOBILE */
-.navMobile {
+/* !INITIAL: hide mobile Navigation and Images */
+.navMobile, .sRA_articleImageMobile {
   display: none;
 }
 /* !GENERAL */
@@ -29,7 +29,7 @@ h1, h2, h3, h4 {
   font-family: 'Ubuntu', sans-serif;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 3rem;
 }
 h2 {
@@ -54,14 +54,17 @@ button {
   height: 3rem;
   border: 2px solid #111;
   font-family: 'Lato', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 100;
+  font-size: 1.125rem;
   color: white;
   background-color: #333;
   transition: background-color 250ms linear;
 }
 button:hover {
   background-color: #55AA55;
+}
+video {
+    width: 100%;
+    height: auto;
 }
 /* !DISPLAY: Flex */
 .flexRow {
@@ -152,7 +155,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 1.5rem;
+  margin: 1.5rem 1.5rem 1.5rem 0;
+  width: 40%;
 }
 .firstRowText span {
   margin-top: 1.5rem;
@@ -370,5 +374,80 @@ footer {
   font-size: 0.75rem;
 }
 
-/* !MEDIA QUERIES */
-
+/* !MEDIA QUERIES: Breakpoint is set to the breaking of the MainArticle Headline */
+@media only screen and (max-width: 750px) {
+  
+    /* hide unwanted nav, articles aso */
+    .navDesktop, .headerLogoDesc_01, .headerLogoDesc_02, .sRA_articleImage, .secondRowMainArticle,
+    .tRA_Image, .tRA_subHeadLine, .tRA_text, .fourthRowArticles, .fourthRowMainArticleContent,
+    .footerLinks {
+      display: none;
+    }
+    /* !HEADER */
+    .headerLogo {
+      width: 25%;
+    }
+    /* !HEADER: navMobile */
+    .navMobile {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 75%;
+      height: 100%;
+    }
+    .navMobile img {
+      margin-right: 1.5rem;
+    }
+    /* !FIRST ROW: Banner with headline */
+    .banner .row {
+      flex-direction: column;
+    }
+    .firstRowImage {
+      margin: 0 auto;
+      width: 100%;
+    }
+    .firstRowText {
+      width: 100%;
+      margin: 1rem;
+    }
+    /* !SECOND ROW: Main Article */
+    .secondRowArticles {
+      align-items: center;
+    }
+    .sRA_article {
+      flex-direction: column;
+      width: 94%;
+      margin-top: 1rem;
+      border: 0;
+    }
+    .sRA_article:last-child {
+      margin-bottom: 2rem;
+    }
+    .sRA_articleImageMobile {
+      display: flex;
+      width: 100%;
+    }
+    .sRA_articleImage, .sRA_articleImage img, .sRA_articleContent {
+      width: 100%;
+    }
+    .secondRowArticles {
+      width: 100%;
+    }
+    /* !THIRD ROW: Start Learning */
+    .tRA_body {
+      max-width: 750px;
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+    .tRA_body:last-child {
+      margin-bottom: 2rem;
+    }
+    /* !FOURTH ROW: Thesis exhibit */
+    .fourthRowMainArticle {
+      width: 100%;
+      justify-content: center;
+    }
+    footer {
+      justify-content: center;
+    }
+} /* !END: Mobile Query 750px */
